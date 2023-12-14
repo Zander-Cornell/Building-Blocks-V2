@@ -88,9 +88,9 @@ plot_Size_Nat <- plot_avg(data = data_Size_Nat, type = "proportion", xlim = c(0,
                      labels = c("Outside", "Target", "Size Comp", "Nationality Comp", "Pattern Comp")) + 
   ggtitle("Click on the large British triangle")  +
   ylim(0,1) +
-geom_vline(xintercept = 449.07175)+
-geom_vline(xintercept = 763.865) +
-geom_vline(xintercept = 1143.31375) 
+geom_vline(xintercept = 649.07175)+
+geom_vline(xintercept = 963.865) +
+geom_vline(xintercept = 1343.31375) 
 plot_Size_Nat
 
 data_Size_Pat <- filter(final_data, condition %in% c("Size_Pat"))
@@ -104,9 +104,9 @@ plot_Size_Pat <- plot_avg(data = data_Size_Pat, type = "proportion", xlim = c(0,
                      labels = c("Outside", "Target", "Size Comp", "Nationality Comp", "Pattern Comp")) + 
   ggtitle("Click on the large checkered triangle")  +
   ylim(0,1) +
-  geom_vline(xintercept = 423.88675)+
-  geom_vline(xintercept = 740.8925) +
-  geom_vline(xintercept = 1158.3025) 
+  geom_vline(xintercept = 623.88675)+
+  geom_vline(xintercept = 940.8925) +
+  geom_vline(xintercept = 1358.3025) 
 plot_Size_Pat
 
 Sub_Int <- plot_grid(plot_Size_Pat, plot_Size_Nat, rel_widths = c(1,1), rel_heights = c(1,1))
